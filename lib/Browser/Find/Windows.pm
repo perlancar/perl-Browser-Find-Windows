@@ -21,7 +21,7 @@ sub find_browser {
     return;
 }
 
-sub list_browser {
+sub list_browsers {
     my @res;
     for (@paths) { push @res, $_ if -x $_ }
     @res;
@@ -43,8 +43,16 @@ sub list_browser {
 Preliminary version.
 
 
+=head1 FUNCTIONS
+
+=head2 find_browser
+
+=head2 list_browsers
+
+
 =head1 SEE ALSO
 
-The B<start> command can also be used.
+The B<start> command can also be used to open a URL or HTML page. This is
+utilized by L<Browser::Open>.
 
 =cut
